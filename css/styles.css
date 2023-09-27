@@ -148,10 +148,14 @@ body {
 /* Hero */
 
 .hero {
+  background-image: url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: fill;        
   color: var(--text-primary-white);
   background-color: var(--hero-background);
   text-align: center;
-  padding: 188px 0;
+  padding: 188px 0; 
 }
 
 .hero-motto {
