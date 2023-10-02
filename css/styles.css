@@ -482,6 +482,11 @@ body {
  
 
 /* Footer */
+.footer-container {
+  text-align: start;
+  display: flex;
+  flex-wrap: wrap; 
+}
 
 .footer {
   padding: 60px 0;
@@ -493,6 +498,34 @@ body {
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
   margin-top: 10px;
+}
+
+.footer-logo {
+  letter-spacing: 0.03em;
+  line-height: 1.3em;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: Raleway;
+  margin-bottom: 16px;
+}
+
+.web {
+  text-transform: uppercase;
+  color: var(--color-iris);
+  text-align: left;
+  display: flex;
+  text-decoration: none;
+}
+
+.social-media {
+  color: var(--color-white);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
 }
 
 .footer-icon-list {
