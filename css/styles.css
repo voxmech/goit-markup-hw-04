@@ -15,6 +15,7 @@
   --background-black: #2f303a;
   --background-grey: #f5f4fa;
   --hero-background: #2e2f42;
+  --color-cloud: #f4f4fd;
 }
 
 /* CSS RESETS */
@@ -148,15 +149,14 @@ body {
 /* Hero */
 
 .hero {
-  display: flex;
   background-image: url(../images/people-office.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 100%;
   object-fit: fill;        
   color: var(--text-primary-white);
   background-color: var(--hero-background);
   text-align: center;
-  padding: 188px 0;
+  padding: 188px 0; 
 }
 
 .hero-motto {
@@ -214,6 +214,21 @@ body {
   letter-spacing: 0.32px;
 }
 
+/*SVG STYLING AREA*/
+
+.icon-svg-features {
+  height: 112px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--background-grey);
+  margin-bottom: 8px;
+}
+
+.icon-items {
+  margin: 24px 100px;
+}
+
 /* What are we doing */
 
 .no-top-padding {
@@ -260,6 +275,7 @@ body {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  
 }
 /* Formula: calc((100% - number_of_gaps_in_row * value_of_one_gap) / number_of_elements_in_row) */
 
@@ -274,6 +290,34 @@ body {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.4px;
+}
+
+/*our team svg styling area*/
+.team-link-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.team-list-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--logo-blue);
+  border-radius: 20px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon {
+  fill: var(--color-cloud);
 }
 
 /* Categories */
