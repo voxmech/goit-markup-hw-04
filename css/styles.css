@@ -326,7 +326,6 @@ body {
 
 .bg-team {
   background-color: var(--background-grey);
-  height: 770px;
 }
 
 .our-team-menu {
@@ -363,7 +362,7 @@ body {
 }
 
 .customers-section {
-  background-color: var(--background-grey);
+  background-color: var(--button-filter);
   
 }
 
