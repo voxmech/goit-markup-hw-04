@@ -277,6 +277,7 @@ body {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  
 }
 /* Formula: calc((100% - number_of_gaps_in_row * value_of_one_gap) / number_of_elements_in_row) */
 
@@ -299,12 +300,13 @@ body {
   height: 40px;
 }
 
-.our-team-list-icon {
+.team-list-icons {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
 }
+
 .team-link-icon {
   display: flex;
   align-items: center;
@@ -315,6 +317,7 @@ body {
   border-radius: 20px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .team-icon {
   fill: var(--color-cloud);
 }
