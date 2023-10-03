@@ -18,6 +18,7 @@
   --color-cloud: #f4f4fd;
   --color-slate: #434455;
   --color-green: #31D0AA;
+  --color-lightslate: #8E8F99;
 }
 
 /* CSS RESETS */
@@ -234,11 +235,7 @@ body {
   margin: 24px 100px;
 }
 
-/* What are we doing */
 
-.no-top-padding {
-  padding-top: 0;
-}
 
 /*our team svg styling area*/
 .team-link-icon {
@@ -293,13 +290,17 @@ body {
   height: 88px;
   color: var(--color-slate);
   border-radius: 4px;
-  border: 1px solid var(--color-slate);
+  border: 1px solid var(--color-lightslate);
   cursor: pointer;
 }
 
 /* end od svg styling area */
 
+/* What are we doing */
 
+.no-top-padding {
+  padding-top: 0;
+}
 
 .section-title {
   margin-bottom: 50px;
@@ -482,7 +483,7 @@ body {
  
 
 /* Footer */
-.footer-container {
+.footer {
   text-align: start;
   display: flex;
   flex-wrap: wrap; 
@@ -498,6 +499,8 @@ body {
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
   margin-top: 10px;
+
+
 }
 
 .footer-logo {
@@ -518,7 +521,7 @@ body {
 }
 
 .social-media {
-  color: var(--color-white);
+  color: var(--primary-white-color);
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -526,6 +529,14 @@ body {
   line-height: 24px;
   letter-spacing: 0.32px;
   margin-bottom: 16px;
+}
+
+
+.footer .container {
+
+  text-align: start;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-icon-list {
