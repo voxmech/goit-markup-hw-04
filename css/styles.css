@@ -155,8 +155,9 @@ body {
 .hero {
   background-image: url(../images/people-office.jpg);
   max-width: 1440px;
+  margin: 0 auto;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   object-fit: cover;        
   color: var(--text-primary-white);
   text-align: center;
