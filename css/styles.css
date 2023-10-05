@@ -131,6 +131,20 @@ body {
   line-height: 1.15em;
 }
 
+
+/* Header Navigation Links Hovaer and Focus + current page */
+.header-navigator-menu .page:hover,
+.header-navigator-menu .page:focus,
+.header-navigator-menu .page.current{
+  color: var(--primary-hover-color);
+}
+
+/* Header Contacts Hover and Focus */
+.header-ctas .contact:hover,
+.header-ctas .contact:focus {
+  color: var(--primary-hover-color);
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -142,16 +156,15 @@ body {
   background-image: url(../images/people-office.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: cover;
-  margin: 0 auto;        
+  background-size: 100%;
+  object-fit: cover;        
   color: var(--text-primary-white);
-  background-color: var(--hero-background);
   text-align: center;
   padding: 188px 0; 
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
+
 }
 
 .hero-motto {
@@ -179,10 +192,7 @@ body {
   letter-spacing: 0.64px;
 }
 
-.order-service:hover,
-.order-service:focus {
-  background-color: var(--button-portfolio-hover);
-}
+
 
 /* Feature */
 
@@ -208,6 +218,82 @@ body {
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
 }
+
+/*SVG STYLING AREA*/
+
+.icon-svg-features {
+  height: 112px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--background-grey);
+  margin-bottom: 8px;
+}
+
+.icon-items {
+  margin: 24px 100px;
+}
+
+
+
+/*our team svg styling area*/
+.team-link-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.team-list-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--logo-blue);
+  border-radius: 20px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon {
+  fill: var(--color-cloud);
+}
+
+.team-item-icon {
+  padding-top: 15px;
+}
+
+.customers-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.customers-icon {
+  width: 100%;
+  fill: var(--color-lightslate);
+}
+
+.customers-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  color: var(--color-slate);
+  border-radius: 4px;
+  border: 1px solid var(--color-lightslate);
+  cursor: pointer;
+}
+
+/* end od svg styling area */
 
 /* What are we doing */
 
@@ -318,6 +404,82 @@ body {
   fill: var(--color-lightslate);
 }
 
+.customers-item:hover {
+  border-color: var(--color-ocean);
+  fill: var(--color-ocean);
+}
+
+.customers-icon:hover {
+  fill: var(--color-ocean);
+}
+
+
+/* Categories */
+
+.categories-menu {
+  list-style: none;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+ }
+
+ .categories-menu:nth-child(1) {
+  margin-left: 271px;
+}
+
+ .categories-menu .button-item {
+  font-family: inherit;
+  letter-spacing: 0.03em;
+  color: var(--button-portfolio-hover);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  border-color: transparent;
+  border-radius: 4px;
+  margin-top: 97px;
+  margin-bottom: 72px;
+  padding: 12px 24px;
+ }
+
+ /*IMAGES SECTION*/
+
+ .images-menu {
+  list-style: none;
+  margin-bottom: 120px;
+}
+
+ .img-actual {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+ }
+
+ .img-item {
+  flex-basis: calc((100%-48px) / 3);
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+ }
+
+ 
+
+ .img-details {
+  line-height: 24px;
+  padding: 32px 20px;
+ }
+
+ .img-details .name {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+ }
+
+ 
 
 /* Footer */
 
@@ -366,6 +528,100 @@ body {
   margin-bottom: 16px;
 }
 
+/*SVG STYLING AREA*/
+
+.team-link-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.team-list-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--logo-blue);
+  border-radius: 20px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon {
+  fill: var(--color-cloud);
+}
+
+.team-item-icon {
+  padding-top: 15px;
+}
+
+.customers-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.customers-icon {
+  width: 100%;
+  fill: var(--color-lightslate);
+}
+
+.customers-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  color: var(--color-slate);
+  border-radius: 4px;
+  border: 1px solid var(--color-lightslate);
+  cursor: pointer;
+}
+
+/* end of svg styling area */
+
+/* interactive elements styling area */
+
+/* Header Navigation Links Hover and Focus + current page */
+.header-navigator-menu .page:hover,
+.header-navigator-menu .page:focus,
+.header-navigator-menu .page.current{
+  color: var(--primary-hover-color);
+}
+
+/* Header Contacts Hover and Focus */
+.header-ctas .contact:hover,
+.header-ctas .contact:focus {
+  color: var(--primary-hover-color);
+}
+
+.team-link-icon:hover,
+.team-link-icon:focus {
+    background-color: var(--button-portfolio-hover)
+  }
+
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: var(--color-green);
+}
+
+.order-service:hover,
+.order-service:focus {
+  background-color: var(--button-portfolio-hover);
+}
+
+
+
+/*end of interactive elements styling area */
 
 .footer-container {
   background-color: var(--hero-background);
@@ -405,6 +661,8 @@ body {
 .footer-icon-link:focus {
   background-color: var(--color-green);
 }
+
+
 
 
 .header-navigator-item-ctas :hover {
@@ -569,7 +827,8 @@ body {
   margin-bottom: 120px;
 }
 
- .img-actual {
+.footer-container {
+  background-color: var(--hero-background);
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
